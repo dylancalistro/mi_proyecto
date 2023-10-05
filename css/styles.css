@@ -1,283 +1,285 @@
-/*estilos generales*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
 }
 
-/*comienza header*/
-.navbar {
-  height: 60px;
+.navbar{
+    height: 60px;
 }
-.navbar svg {
-  width: 30px;
-  height: 30px;
+.navbar svg{
+    width: 30px;
+    height: 30px;
 }
-.navbar .navbar-brand {
-  font-size: 30px;
+.navbar-brand{
+    font-size: 30px;
 }
 
 /*termina el header*/
+
+
+
 /*comienza el Main*/
-main {
-  background-image: url("../img/back3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid black;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-main .main__contenedor {
-  display: grid;
-  grid-template-rows: 400px;
-  grid-template-columns: 3fr 3fr 3fr;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-top: 60px;
-}
-@media (min-width: 320px) and (max-width: 991px) {
-  main .main__contenedor .main__contenedor {
-    display: grid;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-columns: 12fr;
-  }
-}
-main .main__contenedor .main__contenedor__imagen {
-  text-align: center;
-  transition: opacity 0.3s;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-main .main__contenedor .main__contenedor__imagen:hover {
-  opacity: 0.5;
-}
-main .main__contenedor .main__contenedor__imagen h3 {
-  color: white;
-  font-size: 10px;
-}
-main .main__contenedor .main__contenedor__imagen img {
-  padding: 2px;
-  width: 300px;
-  height: 300px;
-  border: 3px solid white;
-}
-main .pie {
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid white;
-  padding-bottom: 1px;
-  margin-bottom: 50px;
-}
-main .card { /*seguimos en main pero arranca la variedad de productos*/
-  margin: 10px 20px;
-  width: 130px;
-  height: 230px;
-}
-@media (min-width: 320px) and (max-width: 991px) {
-  main .container-producto {
-    display: grid;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-  main .card {
-    margin: 0;
-    width: 120px;
-    height: 220px;
-  }
-}
-@media (min-width: 992px) {
-  main .container-producto {
-    display: grid;
-    grid-template-rows: 300px;
-    grid-template-columns: 200px 200px 200px 200px;
-    margin: 0;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-}
-main .enlace-pag { /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
-  margin-right: 10px;
-}
-main .enlace-pag a {
-  text-decoration: underline;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-main .enlace-pag ul {
-  list-style-type: none;
-}
-main .container-pages {
-  margin-top: 10px;
-  margin-left: 15px;
-  /*termina donde puede buscar por un precio el producto*/
-  /* termina la variedad de productos*/
-}
-main .container-pages input {
-  width: 60px;
-}
-main .container-pages h3 {
-  margin-left: 15px;
-}
-main .pasos-comprar { /*main de COMO-COMPRAR*/
-  display: flex;
-  padding: 10px 20px;
-  margin-top: 30px;
-}
-main .pasos-comprar ul {
-  list-style-type: decimal;
-  color: #ffffff;
-  padding: 10px 10px;
-  padding-left: 40px;
-}
-main .pasos-comprar p {
-  color: white;
-  padding-top: 10px;
-}
-main .pasos-comprar h3 {
-  color: white;
-  text-decoration: underline;
-}
-main .dev-contact {
-  display: block;
-  padding: 10px 20px;
-  /*termina el main de como comprar*/
-}
-main .dev-contact ul {
-  list-style-type: disc;
-  color: #000000;
-  padding: 10px 10px;
-  padding-left: 40px;
-}
-main .dev-contact p {
-  color: white;
-  padding: 10px 10px;
-  padding-left: 10px;
-}
-main .dev-contact h3 {
-  color: white;
-  text-decoration: underline;
-  padding: 10px 10px;
-  padding-left: 20px;
-}
-main .contacto-contacto { /*Main de contacto*/
-  display: flex;
-  align-items: center;
-}
-main .contacto-contacto svg {
-  width: 40px;
-  height: 40px;
-}
-main .contactanos {
-  margin-left: 10px;
-  border-bottom: 1px solid white;
-}
-main .redes-contacto {
-  display: flex;
-  align-items: center;
-  /*termina main de contacto*/
-}
-main .redes-contacto svg {
-  width: 40px;
-  height: 40px;
-}
-main .redes-contacto .siganos {
-  margin-left: 10px;
-  border-bottom: 1px solid white;
-}
-main .formulario { /*formulario main de contacto*/
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  /*termina el formulario del main en contacto*/
-}
-main .formulario .input-label {
-  display: block;
-  margin-bottom: 10px;
-}
-main .formulario .input-text {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-main .formulario .formulario button {
-  margin-left: 130px;
-}
-main .formulario .enviar-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+main{
+    background-image: url("../img/back3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
 }
 
-/*termina el main*/
-/* mediaqueries
-@media (min-width: 320px) and (max-width: 991px) {
-    .main__contenedor {
+.main__contenedor__imagen h3{
+    color: white;
+    font-size: 10px;
+    
+}
+.main__contenedor__imagen img{
+    padding: 2px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+}
+.main__contenedor{
+    display: grid;
+    grid-template-rows: 400px ;
+    grid-template-columns:3fr 3fr 3fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    
+}
+.main__contenedor__imagen{
+    text-align: center;
+    transition: opacity 0.3s;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.main__contenedor__imagen:hover{
+    opacity: 0.5;
+}
+.pie {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 1px;
+    margin-bottom: 50px;
+}
+
+/*seguimos en main pero arranca la variedad de productos*/
+/*.container-producto{
+    /*display:grid;
+    grid-template-rows: 300px ;
+    grid-template-columns:200px 200px 200px 200px ;
+    justify-content: center;
+    margin-bottom: 100px;*/
+
+.card{
+    margin: 10px 20px;
+    width: 130px;
+    height: 230px;
+}
+
+
+/*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
+.enlace-pag{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.enlace-pag a{
+    text-decoration: underline;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    
+}
+.enlace-pag ul{
+    list-style-type: none;
+}
+.container-pages{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.container-pages input{
+    width:60px ;
+}
+
+.container-pages h3{
+    margin-left: 15px;
+}
+/*termina donde puede buscar por un precio el producto*/
+/* termina la variedad de productos*/
+
+
+
+
+/*main de COMO-COMPRAR*/
+.pasos-comprar{
+    display:flex;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.pasos-comprar ul{
+    list-style-type: decimal;
+    color: #ffffff;
+    padding: 10px 10px;
+    padding-left: 40px;
+}
+.pasos-comprar p {
+    color: white;
+    padding-top: 10px;
+}
+.pasos-comprar h3 {
+    color: white;
+    text-decoration: underline;
+
+}
+
+.dev-contact{
+    display: block;
+    padding: 10px 20px;
+}
+
+.dev-contact ul {
+    list-style-type: disc;
+    color: #000000;
+    padding: 10px 10px;
+    padding-left: 40px;
+}
+.dev-contact p {
+    color: white;
+    padding: 10px 10px;
+    padding-left: 10px;
+}
+.dev-contact h3 {
+    color: white;
+    text-decoration: underline;
+    padding: 10px 10px;
+    padding-left: 20px;
+}
+/*termina el main de como comprar*/
+
+
+/*Main de contacto*/
+.contacto-contacto{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contactanos{
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+    
+}
+
+.contacto-contacto svg {
+    width: 40px;
+    height: 40px;
+}
+
+.redes-contacto{
+    display: flex;
+    align-items: center;
+}
+.siganos{
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+}
+
+
+.redes-contacto svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*formulario main de contacto*/
+.formulario{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+.input-label {
+    display: block;
+    margin-bottom: 10px;
+} 
+.input-text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.formulario button{
+    margin-left: 130px;
+}
+.enviar-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+/*termina el formulario del main en contacto*/
+
+/*mediaqueries*/
+@media (min-width:320px) and (max-width:991px){
+    .main__contenedor{
         display: grid;
         grid-template-rows: 400px 400px 400px;
         grid-template-columns: 12fr;
     }
 }
-
-@media (min-width: 320px) and (max-width: 991px) {
-    .container-producto {
+@media (min-width:320px) and (max-width:991px){
+    .container-producto{
         display: grid;
-        grid-template-rows: 300px 300px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows:300px 300px ;
+        grid-template-columns: 1fr 1fr ;
         margin: 0;
         justify-content: center;
         align-content: center;
         justify-items: center;
         align-items: center;
     }
-
-    .card {
+    .card{
         margin: 0;
         width: 120px;
         height: 220px;
     }
 }
-
-@media (min-width: 992px) {
-    .container-producto {
+@media(min-width:992px){
+    .container-producto{
         display: grid;
         grid-template-rows: 300px;
-        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px ;
         margin: 0;
         justify-content: center;
         align-content: center;
         justify-items: center;
         align-items: center;
     }
-}*/
-/*termina mediaqueries*/
+    
+
+}
+/*terminan mediaqueries*/
+
 /*footer*/
 footer svg {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
-
-/*# sourceMappingURL=styles.css.map */
+/*termina footer*/
