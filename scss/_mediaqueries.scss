@@ -1,12 +1,12 @@
 /*mediaqueries*/
-    @media (min-width:320px) and (max-width:991px){
+@media (min-width:320px) and (max-width:991px){
     .main__contenedor{
         display: grid;
         grid-template-rows: 400px 400px 400px;
         grid-template-columns: 12fr;
     }
-    }
-    @media (min-width:320px) and (max-width:991px){
+}
+@media (min-width:320px) and (max-width:991px){
     .container-producto{
         display: grid;
         grid-template-rows:300px 300px ;
@@ -22,8 +22,8 @@
         width: 120px;
         height: 220px;
     }
-    }
-    @media(min-width:992px){
+}
+@media(min-width:992px){
     .container-producto{
         display: grid;
         grid-template-rows: 300px;
@@ -34,5 +34,5 @@
         justify-items: center;
         align-items: center;
     }
-    }
+}
     /*terminan mediaqueries*/
