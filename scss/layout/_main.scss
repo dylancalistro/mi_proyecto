@@ -6,7 +6,7 @@ main{
     border-bottom: 1px solid black;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    /*.main__contenedor{
+    .main__contenedor{
         display: grid;
         grid-template-rows: 400px ;
         grid-template-columns:3fr 3fr 3fr;
@@ -14,29 +14,28 @@ main{
         align-content: center;
         justify-items: center;
         align-items: center;
-        margin-top: 60px;   
-    }*/
-    .main-contenedorimagen{
-        text-align: center;
-        transition: opacity 0.3s;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        &:hover{
-            opacity: 0.5;
-        }
-        h3{
-            color: white;
-            font-size: 10px;
-        }
-        img{
-            padding: 2px;
-            width: 300px;
-            height: 300px;
-            border: 3px solid white;
-        }
-    } 
-    
+        margin-top: 60px;
+        .main__contenedor__imagen{
+            text-align: center;
+            transition: opacity 0.3s;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            &:hover{
+                opacity: 0.5;
+            }
+            h3{
+                color: white;
+                font-size: 10px;
+            }
+            img{
+                padding: 2px;
+                width: 300px;
+                height: 300px;
+                border: 3px solid white;
+            }
+        }   
+    }
     .pie {
         color: rgb(151, 149, 149);
         background-color: rgb(255, 255, 255);

@@ -1,13 +1,13 @@
 /*queries*/
 @media (min-width:320px) and (max-width:991px){
-    .main-contenedor{
+    .main__contenedor{
         display: grid;
         grid-template-rows: 400px 400px 400px;
         grid-template-columns: 12fr;
     }
 }
 @media(min-width:992px){
-    .main-contenedor{
+    .main__contenedor{
         display: grid;
         grid-template-rows: 400px ;
         grid-template-columns:3fr 3fr 3fr;
