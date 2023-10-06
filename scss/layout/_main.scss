@@ -16,27 +16,27 @@ main{
         align-items: center;
         margin-top: 60px;
         }
-        .main__contenedor__imagen{
-            text-align: center;
-            transition: opacity 0.3s;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            &:hover{
-                opacity: 0.5;
+    .main__contenedor__imagen{
+        text-align: center;
+        transition: opacity 0.3s;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &:hover{
+            opacity: 0.5;
                 
-            }
-            h3{
-                color: white;
-                font-size: 10px;
-            }
-            img{
-                padding: 2px;
-                width: 300px;
-                height: 300px;
-                border: 3px solid white;
-            }
-        }    
+        }
+        h3{
+            color: white;
+            font-size: 10px;
+        }
+        img{
+            padding: 2px;
+            width: 300px;
+            height: 300px;
+            border: 3px solid white;
+        }
+    }    
     .pie {
         color: rgb(151, 149, 149);
         background-color: rgb(255, 255, 255);
