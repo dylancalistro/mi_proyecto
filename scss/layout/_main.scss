@@ -12,22 +12,19 @@ main{
             font-size: 1rem;
             text-align: center;
             color: rgb(255, 255, 255);
-            background-color: rgba(0, 0, 0, 0.321);
+            background-color: $back1;
             
         }
     }
-    .main__contenedor__imagen{
-        text-align: center;
+    .contenedor-imagen{
         transition: opacity 0.3s;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
         &:hover{
             opacity: 0.5;
         }  
         h3{
             color: rgb(255, 255, 255);
             font-size: 1rem;
+            text-transform: uppercase;
         }
         img{
             padding: 2px;
@@ -39,7 +36,7 @@ main{
     
     h2{
         color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.321);
+        background-color:$back1;
         text-align: center;
         font-size: 0.9rem;
         margin-top: 10px;
@@ -80,7 +77,7 @@ main{
         }
         .como-comprar{
             list-style-type: decimal;
-            background-color: rgba(255, 255, 255, 0.238);
+            background-color: $back2;
             li{
                 color: rgb(0, 0, 0);
                 
@@ -88,13 +85,13 @@ main{
         }
         .devoluciones{
             list-style-type: decimal;
-            background-color:rgba(255, 255, 255, 0.238);
+            background-color:$back2;
             li{
                 color: rgb(0, 0, 0);
             }
         }
         .contactarnos{
-            background-color: rgba(255, 255, 255, 0.238);
+            background-color: $back2;
             li{
                 color: rgb(0, 0, 0);
             }
@@ -105,10 +102,6 @@ main{
     /*main de contacto*/
     .contacto-contacto{
         display: grid;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
         .form-label{
             color: white;
         }

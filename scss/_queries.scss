@@ -1,7 +1,7 @@
 /*queries*/
 /* queries del index*/
 @media (min-width:320px) and (max-width:991px){
-    .main__contenedor{
+    .contenedor{
         display: grid;
         grid-template-rows: 350px 350px 350px;
         grid-template-columns: 3fr;
@@ -9,14 +9,10 @@
     }
 }
 @media (min-width:992px){
-    .main__contenedor{
+    .contenedor{
         display: grid;
         grid-template-rows: 400px ;
         grid-template-columns:3fr 3fr 3fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
         margin-top: 10px;
     }    
 }
@@ -26,10 +22,6 @@
         grid-template-rows:300px 300px ;
         grid-template-columns: 6fr 6fr ;
         padding: 0;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
         .card{
             margin: 0;
             width: 140px;
@@ -54,10 +46,6 @@
         grid-template-rows: 300px;
         grid-template-columns: 200px 200px 200px 200px ;
         margin: 0;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
         .card-text{
             display: flex;
             justify-content: center;
@@ -85,10 +73,6 @@
         display: grid;
         grid-template-columns: 3fr;
         grid-template-rows: 12fr;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
         margin-top: 100px;
     }
 }
