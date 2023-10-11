@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 /*comienza el header*/
@@ -27,6 +27,17 @@ main {
   border-bottom: 1px solid black;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
+  /*main de contacto*/
+  /*termina el main de contacto*/
+}
+main .h1 {
+  padding-top: 70px;
+}
+main .h1 h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.783);
 }
 main .main__contenedor__imagen {
   text-align: center;
@@ -39,8 +50,8 @@ main .main__contenedor__imagen:hover {
   opacity: 0.5;
 }
 main .main__contenedor__imagen h3 {
-  color: white;
-  font-size: 10px;
+  color: rgb(236, 226, 226);
+  font-size: 1rem;
 }
 main .main__contenedor__imagen img {
   padding: 2px;
@@ -48,18 +59,11 @@ main .main__contenedor__imagen img {
   height: 300px;
   border: 3px solid white;
 }
-main .pie {
-  color: rgb(151, 149, 149);
-  background-color: rgb(255, 255, 255);
+main h2 {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.133);
   text-align: center;
-  font-size: 10px;
-  margin-top: 120px;
-}
-main .pie-2 {
-  color: rgb(151, 149, 149);
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 10px;
+  font-size: 1rem;
   margin-top: 10px;
 }
 main .card { /*seguimos en main pero arranca la variedad de productos*/
@@ -67,23 +71,8 @@ main .card { /*seguimos en main pero arranca la variedad de productos*/
   width: 130px;
   height: 230px;
 }
-main .enlace-pag { /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 40px;
-  margin-right: 10px;
-}
-main .enlace-pag a {
-  text-decoration: underline;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-main .enlace-pag ul {
-  list-style-type: none;
-}
 main .container-pages {
-  margin-top: 10px;
+  padding-top: 100px;
   margin-left: 15px;
   /*termina donde puede buscar por un precio el producto*/
   /* termina la variedad de productos*/
@@ -91,105 +80,65 @@ main .container-pages {
 main .container-pages input {
   width: 60px;
 }
-main .container-pages h3 {
-  margin-left: 15px;
+main .container-pages p {
+  margin-left: 30px;
+}
+main .como-comprar {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-rows: 4fr;
 }
 main .pasos-comprar { /*main de pasos a comprar*/
-  display: flex;
-  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 12fr;
+  margin: 0;
   margin-top: 30px;
 }
 main .pasos-comprar ul {
-  list-style-type: decimal;
+  list-style-type: circle;
   color: #ffffff;
-  padding: 10px 10px;
-  padding-left: 40px;
 }
 main .pasos-comprar p {
-  color: white;
-  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  text-align: start;
 }
 main .pasos-comprar h3 {
-  color: white;
+  color: rgb(255, 255, 255);
+  text-align: start;
   text-decoration: underline;
 }
-main .dev-contact {
-  display: block;
-  padding: 10px 20px;
-  /*termina el main de como comprar*/
+main .pasos-comprar h5 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-align: center;
 }
-main .dev-contact ul {
-  list-style-type: disc;
-  color: #000000;
-  padding: 10px 10px;
-  padding-left: 40px;
-}
-main .dev-contact p {
+main .pie-cc {
   color: white;
-  padding: 10px 10px;
-  padding-left: 10px;
+  font-size: 1rem;
+  text-align: center;
 }
-main .dev-contact h3 {
-  color: white;
-  text-decoration: underline;
-  padding: 10px 10px;
-  padding-left: 20px;
-}
-main .contacto-contacto { /*Main de contacto*/
-  display: flex;
+main .contacto-contacto {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
   align-items: center;
+}
+main .contacto-contacto form {
+  padding: 50px 10px;
 }
 main .contacto-contacto svg {
   width: 40px;
   height: 40px;
 }
-main .contacto-contacto .contactanos {
-  margin-left: 10px;
-  border-bottom: 1px solid white;
-}
-main .redes-contacto {
+main .contacto-contacto p {
   display: flex;
-  align-items: center;
-  /*termina main de contacto*/
 }
-main .redes-contacto .siganos {
-  margin-left: 10px;
-  border-bottom: 1px solid white;
+main .contacto-contacto li {
+  color: white;
 }
-main .redes-contacto svg {
-  width: 40px;
-  height: 40px;
-}
-main .formulario { /*formulario main de contacto*/
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  /*termina el formulario del main en contacto*/
-}
-main .formulario .input-label {
-  display: block;
-  margin-bottom: 10px;
-}
-main .formulario .input-text {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-main .formulario .formulario button {
-  margin-left: 130px;
-}
-main .formulario .enviar-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+main .contacto-contacto ul {
+  list-style-type: none;
 }
 
 /*termina el main*/
@@ -206,7 +155,7 @@ footer svg {
     display: grid;
     grid-template-rows: 350px 350px 350px;
     grid-template-columns: 3fr;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 992px) {
@@ -218,7 +167,7 @@ footer svg {
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 991px) {
@@ -248,6 +197,25 @@ footer svg {
     align-content: center;
     justify-items: center;
     align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-contacto {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 12fr;
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .container-contacto {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 12fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
   }
 }
 /*fin queries*/

@@ -6,6 +6,15 @@ main{
     border-bottom: 1px solid black;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    .h1{
+        padding-top: 70px;
+        h1{
+            font-size: 1.2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.783);
+            
+        }
+    }
     .main__contenedor__imagen{
         text-align: center;
         transition: opacity 0.3s;
@@ -16,7 +25,7 @@ main{
             opacity: 0.5;
         }  
         h3{
-            color: white;
+            color: rgb(236, 226, 226);
             font-size: 1rem;
         }
         img{
@@ -26,145 +35,92 @@ main{
             border: 3px solid white;
         }
     }    
-    .pie {
-        color: rgb(151, 149, 149);
-        background-color: rgb(255, 255, 255);
+    
+    h2{
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.133);
         text-align: center;
-        font-size: 10px;
-        margin-top: 120px;
-    }
-    .pie-2{
-        color: rgb(151, 149, 149);
-        background-color: rgb(255, 255, 255);
-        text-align: center;
-        font-size: 10px;
+        font-size: 1rem;
         margin-top: 10px;
+        ;
     }
     .card{/*seguimos en main pero arranca la variedad de productos*/
         margin: 10px 20px;
         width: 130px;
         height: 230px;
     }
-    .enlace-pag{/*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 40px;
-        margin-right: 10px;
-        a{
+    /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/    
+    .container-pages{
+        padding-top: 100px;
+        margin-left: 15px;
+        input{
+            width:60px ;
+        }
+        p{
+            margin-left: 30px;
+        }
+        /*termina donde puede buscar por un precio el producto*/
+        /* termina la variedad de productos*/
+    }
+    .como-comprar{
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: 4fr;
+    }
+    .pasos-comprar{/*main de pasos a comprar*/
+        display:grid;
+        grid-template-columns:12fr;
+        margin: 0;
+        margin-top: 30px;
+        ul{
+            list-style-type: circle;
+            color: #ffffff;
+        }
+        p{
+            color: rgb(255, 255, 255);
+            text-align: start;
+        }
+        h3 {
+            color: rgb(255, 255, 255);
+            text-align: start;
             text-decoration: underline;
+        }
+        h5{
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .pie-cc{
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*main de contacto*/
+    .contacto-contacto{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        form{
+            padding: 50px 10px;
+        }
+        svg {
+            width: 40px;
+            height: 40px;
+            }
+        p{
+            display: flex;
+        }
+        li{
             color: white;
-            font-size: 10px;
-            font-weight: bold;
         }
         ul{
             list-style-type: none;
         }
     }
-    .container-pages{
-        margin-top: 10px;
-        margin-left: 15px;
-        input{
-            width:60px ;
-        }
-        h3{
-            margin-left: 15px;
-        }
-        /*termina donde puede buscar por un precio el producto*/
-        /* termina la variedad de productos*/
-    }
-    .pasos-comprar{/*main de pasos a comprar*/
-        display:flex;
-        padding: 10px 20px;
-        margin-top: 30px;
-        ul{
-            list-style-type: decimal;
-            color: #ffffff;
-            padding: 10px 10px;
-            padding-left: 40px;
-        }
-        p{
-            color: white;
-            padding-top: 10px;
-        }
-        h3 {
-            color: white;
-            text-decoration: underline;
-        }
-    }
-    .dev-contact{
-        display: block;
-        padding: 10px 20px;
-        ul {
-            list-style-type: disc;
-            color: #000000;
-            padding: 10px 10px;
-            padding-left: 40px;
-        }
-        p {
-            color: white;
-            padding: 10px 10px;
-            padding-left: 10px;
-        }
-        h3 {
-            color: white;
-            text-decoration: underline;
-            padding: 10px 10px;
-            padding-left: 20px;
-        }/*termina el main de como comprar*/
-    }
-    .contacto-contacto{/*Main de contacto*/
-        display: flex;
-        align-items: center;
-        svg {
-            width: 40px;
-            height: 40px;
-        }
-        .contactanos{
-            margin-left: 10px;
-            border-bottom: 1px solid white;
-        }
-    }
-    .redes-contacto{
-        display: flex;
-        align-items: center;
-        .siganos{
-            margin-left: 10px;
-            border-bottom: 1px solid white;
-        }
-        svg{
-            width: 40px;
-            height: 40px;
-        }/*termina main de contacto*/
-    }
-    .formulario{/*formulario main de contacto*/
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f5f5f5;
-        .input-label {
-            display: block;
-            margin-bottom: 10px;
-        } 
-        .input-text {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .formulario button{
-            margin-left: 130px;
-        }
-        .enviar-button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        } /*termina el formulario del main en contacto*/
-    }
+    /*termina el main de contacto*/
 }
 /*termina el main*/
