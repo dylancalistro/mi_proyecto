@@ -37,7 +37,7 @@ main .h1 {
   padding-top: 60px;
 }
 main .h1 h1 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.321);
@@ -66,7 +66,7 @@ main h2 {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.321);
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 10px;
 }
 main .card { /*seguimos en main pero arranca la variedad de productos*/
