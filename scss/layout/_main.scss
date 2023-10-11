@@ -7,11 +7,12 @@ main{
     padding-bottom: 0px;
     margin-bottom: 0px;
     .h1{
-        padding-top: 70px;
+        padding-top: 60px;
         h1{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-align: center;
-            color: rgba(255, 255, 255, 0.783);
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.321);
             
         }
     }
@@ -37,8 +38,8 @@ main{
     }    
     
     h2{
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.133);
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.321);
         text-align: center;
         font-size: 1rem;
         margin-top: 10px;
@@ -62,40 +63,44 @@ main{
         /*termina donde puede buscar por un precio el producto*/
         /* termina la variedad de productos*/
     }
-    .como-comprar{
+
+    /*main de como comprar*/
+    .container-comprar{
         display: grid;
         grid-template-columns: 12fr;
-        grid-template-rows: 4fr;
-    }
-    .pasos-comprar{/*main de pasos a comprar*/
-        display:grid;
-        grid-template-columns:12fr;
-        margin: 0;
-        margin-top: 30px;
-        ul{
-            list-style-type: circle;
-            color: #ffffff;
-        }
-        p{
+        grid-template-rows: 12fr 12fr;
+        .politicas div p{
+            margin-left: 10px;
             color: rgb(255, 255, 255);
-            text-align: start;
+            
         }
-        h3 {
-            color: rgb(255, 255, 255);
-            text-align: start;
+        h3{
+            font-size: 20px;
             text-decoration: underline;
         }
-        h5{
-            color: rgb(0, 0, 0);
-            font-size: 1rem;
-            text-align: center;
+        .como-comprar{
+            list-style-type: decimal;
+            background-color: rgba(255, 255, 255, 0.238);
+            li{
+                color: rgb(0, 0, 0);
+                
+            }
+        }
+        .devoluciones{
+            list-style-type: decimal;
+            background-color:rgba(255, 255, 255, 0.238);
+            li{
+                color: rgb(0, 0, 0);
+            }
+        }
+        .contactarnos{
+            background-color: rgba(255, 255, 255, 0.238);
+            li{
+                color: rgb(0, 0, 0);
+            }
         }
     }
-    .pie-cc{
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-    }
+    /*termina el main de como comprar*/
 
     /*main de contacto*/
     .contacto-contacto{

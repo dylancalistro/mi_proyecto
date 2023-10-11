@@ -28,16 +28,19 @@ main {
   padding-bottom: 0px;
   margin-bottom: 0px;
   /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
+  /*main de como comprar*/
+  /*termina el main de como comprar*/
   /*main de contacto*/
   /*termina el main de contacto*/
 }
 main .h1 {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 main .h1 h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
-  color: rgba(255, 255, 255, 0.783);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.321);
 }
 main .main__contenedor__imagen {
   text-align: center;
@@ -60,8 +63,8 @@ main .main__contenedor__imagen img {
   border: 3px solid white;
 }
 main h2 {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.133);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.321);
   text-align: center;
   font-size: 1rem;
   margin-top: 10px;
@@ -83,39 +86,38 @@ main .container-pages input {
 main .container-pages p {
   margin-left: 30px;
 }
-main .como-comprar {
+main .container-comprar {
   display: grid;
   grid-template-columns: 12fr;
-  grid-template-rows: 4fr;
+  grid-template-rows: 12fr 12fr;
 }
-main .pasos-comprar { /*main de pasos a comprar*/
-  display: grid;
-  grid-template-columns: 12fr;
-  margin: 0;
-  margin-top: 30px;
-}
-main .pasos-comprar ul {
-  list-style-type: circle;
-  color: #ffffff;
-}
-main .pasos-comprar p {
+main .container-comprar .politicas div p {
+  margin-left: 10px;
   color: rgb(255, 255, 255);
-  text-align: start;
 }
-main .pasos-comprar h3 {
-  color: rgb(255, 255, 255);
-  text-align: start;
+main .container-comprar h3 {
+  font-size: 20px;
   text-decoration: underline;
 }
-main .pasos-comprar h5 {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  text-align: center;
+main .container-comprar .como-comprar {
+  list-style-type: decimal;
+  background-color: rgba(255, 255, 255, 0.238);
 }
-main .pie-cc {
-  color: white;
-  font-size: 1rem;
-  text-align: center;
+main .container-comprar .como-comprar li {
+  color: rgb(0, 0, 0);
+}
+main .container-comprar .devoluciones {
+  list-style-type: decimal;
+  background-color: rgba(255, 255, 255, 0.238);
+}
+main .container-comprar .devoluciones li {
+  color: rgb(0, 0, 0);
+}
+main .container-comprar .contactarnos {
+  background-color: rgba(255, 255, 255, 0.238);
+}
+main .container-comprar .contactarnos li {
+  color: rgb(0, 0, 0);
 }
 main .contacto-contacto {
   display: grid;
@@ -150,6 +152,7 @@ footer svg {
 
 /*termina footer*/
 /*queries*/
+/* queries del index*/
 @media (min-width: 320px) and (max-width: 991px) {
   .main__contenedor {
     display: grid;
@@ -174,17 +177,27 @@ footer svg {
   .container-producto {
     display: grid;
     grid-template-rows: 300px 300px;
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
+    grid-template-columns: 6fr 6fr;
+    padding: 0;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
   }
-  .card {
+  .container-producto .card {
     margin: 0;
-    width: 120px;
-    height: 220px;
+    width: 140px;
+    height: 240px;
+  }
+  .container-producto .card-text {
+    display: flex;
+    justify-content: center;
+  }
+  .container-producto .card-body {
+    display: block;
+  }
+  .container-producto .card-body button {
+    margin-left: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -198,7 +211,19 @@ footer svg {
     justify-items: center;
     align-items: center;
   }
+  .container-producto .card-text {
+    display: flex;
+    justify-content: center;
+  }
+  .container-producto .card-body {
+    display: block;
+  }
+  .container-producto .card-body button {
+    margin-left: 10px;
+  }
 }
+/*fin queries index*/
+/* queries pag contacto*/
 @media (min-width: 992px) {
   .container-contacto {
     display: grid;
@@ -218,6 +243,7 @@ footer svg {
     margin-top: 100px;
   }
 }
+/*fin queries pag contacto*/
 /*fin queries*/
 
 /*# sourceMappingURL=styles.css.map */
