@@ -11,8 +11,8 @@ main{
         h1{
             font-size: 1rem;
             text-align: center;
-            color: rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.321);
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.321);
             
         }
     }
@@ -26,7 +26,7 @@ main{
             opacity: 0.5;
         }  
         h3{
-            color: rgb(236, 226, 226);
+            color: rgb(255, 255, 255);
             font-size: 1rem;
         }
         img{
@@ -109,6 +109,15 @@ main{
         justify-content: center;
         align-content: center;
         align-items: center;
+        .form-label{
+            color: white;
+        }
+        .form-text{
+            color: rgb(0, 0, 0);
+        }
+        .form-check-label{
+            color: white;
+        }
         form{
             padding: 50px 10px;
         }

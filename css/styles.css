@@ -39,8 +39,8 @@ main .h1 {
 main .h1 h1 {
   font-size: 1rem;
   text-align: center;
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.321);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.321);
 }
 main .main__contenedor__imagen {
   text-align: center;
@@ -53,7 +53,7 @@ main .main__contenedor__imagen:hover {
   opacity: 0.5;
 }
 main .main__contenedor__imagen h3 {
-  color: rgb(236, 226, 226);
+  color: rgb(255, 255, 255);
   font-size: 1rem;
 }
 main .main__contenedor__imagen img {
@@ -125,6 +125,15 @@ main .contacto-contacto {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+main .contacto-contacto .form-label {
+  color: white;
+}
+main .contacto-contacto .form-text {
+  color: rgb(0, 0, 0);
+}
+main .contacto-contacto .form-check-label {
+  color: white;
 }
 main .contacto-contacto form {
   padding: 50px 10px;
