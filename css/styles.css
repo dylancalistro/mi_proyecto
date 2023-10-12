@@ -213,6 +213,7 @@ footer svg {
   .container-producto .card-text {
     display: flex;
     justify-content: center;
+    font-size: 15px;
   }
   .container-producto .card-body {
     display: block;
@@ -231,6 +232,7 @@ footer svg {
   .container-producto .card-text {
     display: flex;
     justify-content: center;
+    font-size: 0.8rem;
   }
   .container-producto .card-body {
     display: block;
