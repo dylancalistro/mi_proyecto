@@ -22,11 +22,6 @@
         grid-template-rows:300px 300px ;
         grid-template-columns: 6fr 6fr ;
         padding: 0;
-        .card{
-            margin: 0;
-            width: 140px;
-            height: 240px;
-        }
         .card-text{
             display: flex;
             justify-content: center;
@@ -53,7 +48,7 @@
         .card-body{
             display: block;
             button{
-                margin-left: 10px;
+                margin-left: 20px;
             }
         }
     }

@@ -10,3 +10,37 @@
     justify-items: center;
     align-items: center;
 }
+%h1-main{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+%h3-contenedor{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;  
+    text-transform: uppercase;
+}
+%img-contenedor{
+    padding: 2px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+}
+%h2-text{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.cards{
+    width: 140px;
+    height: 240px;
+}
+%grid-comprar{
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 12fr 12fr;
+}
+%svg-contacto{
+    width: 40px;
+    height: 40px;
+}

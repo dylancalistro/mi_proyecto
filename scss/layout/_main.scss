@@ -9,11 +9,8 @@ main{
     .h1{
         padding-top: 60px;
         h1{
-            font-size: 1rem;
-            text-align: center;
-            color: rgb(255, 255, 255);
+            @extend %h1-main;
             background-color: $back1;
-            
         }
     }
     .contenedor-imagen{
@@ -22,35 +19,28 @@ main{
             opacity: 0.5;
         }  
         h3{
-            color: rgb(255, 255, 255);
-            font-size: 1rem;
-            text-transform: uppercase;
+            @extend %h3-contenedor;
         }
         img{
-            padding: 2px;
-            width: 300px;
-            height: 300px;
-            border: 3px solid white;
+            @extend %img-contenedor;
         }
     }    
     
     h2{
         color: rgb(255, 255, 255);
         background-color:$back1;
-        text-align: center;
-        font-size: 0.9rem;
-        margin-top: 10px;
-        ;
+        @extend %h2-text;
     }
     .card{/*seguimos en main pero arranca la variedad de productos*/
-        margin: 10px 20px;
-        width: 130px;
-        height: 230px;
+        @extend .cards;
     }
     /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/    
     .container-pages{
         padding-top: 100px;
         margin-left: 15px;
+        div{
+            margin-left: 70px;
+        }
         input{
             width:60px ;
         }
@@ -63,9 +53,7 @@ main{
 
     /*main de como comprar*/
     .container-comprar{
-        display: grid;
-        grid-template-columns: 12fr;
-        grid-template-rows: 12fr 12fr;
+        @extend %grid-comprar;
         .politicas div p{
             margin-left: 10px;
             color: rgb(255, 255, 255);
@@ -115,8 +103,7 @@ main{
             padding: 50px 10px;
         }
         svg {
-            width: 40px;
-            height: 40px;
+            @extend %svg-contacto;
             }
         p{
             display: flex;
