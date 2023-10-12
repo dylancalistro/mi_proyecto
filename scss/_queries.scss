@@ -2,25 +2,19 @@
 /* queries del index*/
 @media (min-width:320px) and (max-width:991px){
     .contenedor{
-        display: grid;
-        grid-template-rows: 350px 350px 350px;
-        grid-template-columns: 3fr;
+        @include grid(grid,350px 350px 350px,3fr);
         margin-top: 50px;
     }
 }
 @media (min-width:992px){
     .contenedor{
-        display: grid;
-        grid-template-rows: 400px ;
-        grid-template-columns:3fr 3fr 3fr;
+        @include grid(grid,400px,3fr 3fr 3fr);
         margin-top: 10px;
     }    
 }
 @media (min-width:320px) and (max-width:991px){
     .container-producto{
-        display: grid;
-        grid-template-rows:300px 300px ;
-        grid-template-columns: 6fr 6fr ;
+        @include grid(grid,300px 300px,6fr 6fr);
         padding: 0;
         .card-text{
             display: flex;
@@ -37,9 +31,7 @@
 }
 @media(min-width:992px){
     .container-producto{
-        display: grid;
-        grid-template-rows: 300px;
-        grid-template-columns: 200px 200px 200px 200px ;
+        @include grid(grid,300px,200px 200px 200px 200px);
         margin: 0;
         .card-text{
             display: flex;
@@ -58,16 +50,12 @@
 /* queries pag contacto*/
 @media(min-width:992px){
     .container-contacto{
-        display: grid;
-        grid-template-columns: 3fr 3fr;
-        grid-template-rows: 12fr;
+        @include grid(grid,12fr, 3fr 3fr);
     } 
 }
 @media(min-width:320px) and (max-width:991px){
     .container-contacto{
-        display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: 12fr;
+        @include grid(grid,12fr,3fr);
         margin-top: 100px;
     }
 }
