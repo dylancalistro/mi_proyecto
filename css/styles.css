@@ -12,12 +12,11 @@
   align-items: center;
 }
 
-main .h1 h1 {
-  font-size: 1rem;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
+/*%h1-main{
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}*/
 main .contenedor-imagen h3 {
   color: rgb(255, 255, 255);
   font-size: 1rem;
@@ -82,17 +81,18 @@ main {
   border-bottom: 1px solid black;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  /*.h1{
+      padding-top: 60px;
+      h1{
+          @extend %h1-main;
+          background-color: $back1;
+      }
+  }*/
   /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/
   /*main de como comprar*/
   /*termina el main de como comprar*/
   /*main de contacto*/
   /*termina el main de contacto*/
-}
-main .h1 {
-  padding-top: 60px;
-}
-main .h1 h1 {
-  background-color: rgba(0, 0, 0, 0.321);
 }
 main .contenedor-imagen {
   transition: opacity 0.3s;
@@ -187,6 +187,28 @@ footer svg {
 /*termina footer*/
 /*queries*/
 /* queries del index*/
+@media (min-width: 320px) and (max-width: 991px) {
+  .h1 {
+    padding-top: 60px;
+  }
+  .h1 h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.321);
+  }
+}
+@media (min-width: 992px) {
+  .h1 {
+    padding-top: 60px;
+  }
+  .h1 h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.321);
+  }
+}
 @media (min-width: 320px) and (max-width: 991px) {
   .contenedor {
     display: grid;

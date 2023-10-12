@@ -3,3 +3,8 @@
     grid-template-rows:$rows ;
     grid-template-columns:$columns ;
 }
+@mixin font($font,$center,$color){
+    font-size:$font;
+    text-align:$center ;
+    color:$color;
+}

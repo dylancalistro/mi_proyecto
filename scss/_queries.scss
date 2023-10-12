@@ -1,6 +1,24 @@
 /*queries*/
 /* queries del index*/
 @media (min-width:320px) and (max-width:991px){
+    .h1{
+        padding-top: 60px;
+        h1{
+            @include font(1rem,center,white);
+            background-color: $back1;
+        }
+    }
+}
+@media (min-width:992px){
+    .h1{
+        padding-top: 60px;
+        h1{
+            @include font(1.3rem,center,white);
+            background-color: $back1;
+        }
+    }
+}
+@media (min-width:320px) and (max-width:991px){
     .contenedor{
         @include grid(grid,350px 350px 350px,3fr);
         margin-top: 50px;
