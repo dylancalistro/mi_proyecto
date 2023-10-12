@@ -1,6 +1,6 @@
 /*comienza el Main*/
 main{
-    background-image: url("../img/back3.jpg");
+    background-image: url("../img/principal/back3.webp");
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid black;
@@ -33,6 +33,10 @@ main{
     }
     .card{/*seguimos en main pero arranca la variedad de productos*/
         @extend .cards;
+        .card-img-top{
+            width: 148px;
+            height: 145px;
+        }
     }
     /*main pero la section donde pueden buscar el porducto por un precio (mates termos box completos)*/    
     .container-pages{
