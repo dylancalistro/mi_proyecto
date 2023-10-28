@@ -39,16 +39,23 @@
     .container-producto{
         @include grid(grid,300px 300px,6fr 6fr);
         padding: 0;
-        .card-text{
+        .card-text span{
             display: flex;
             justify-content: center;
             font-size: 12px;
+            font-weight: bold;
             color: black;
+            text-decoration: underline rgba(0, 0, 0, 0.304);
         }
         .card-body{
-            display: block;
             button{
-                margin-left: 20px;
+                margin-left: 25px;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+                font-size: 0.8rem;
+                margin-bottom: 5px;
             }
         }
     }
@@ -58,16 +65,22 @@
     .container-producto{
         @include grid(grid,300px,200px 200px 200px 200px);
         margin: 0;
-        .card-text{
+        .card-text span{
             display: flex;
             justify-content: center;
             font-size: 0.8rem;
-            text-decoration: underline;
+            font-weight: bold;
+            text-decoration: underline rgba(0, 0, 0, 0.304);
         }
         .card-body{
-            display: block;
             button{
-                margin-left: 20px;
+                margin-left: 25px;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+                font-size: 0.7rem;
+                margin-bottom: 5px;
             }
         }
     }
