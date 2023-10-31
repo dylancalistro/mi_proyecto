@@ -8,3 +8,8 @@
     text-align:$center ;
     color:$color;
 }
+@mixin flex($display,$justify,$align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}

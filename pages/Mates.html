@@ -88,11 +88,16 @@
         <div class="h1">
             <h1 class="text-focus-in">variedad de mates | variedad de colores | diferentes tipos de formas y calidad</h1>
         </div>
-        <div class="container-pages mb-5">
-            <div>
-                <p class="text-uppercase font-weight-bold text-white ">Precio</p>
-                <input type="text" placeholder="desde">
-                <input type="text" placeholder="hasta">
+        <div class="container-pages mb-5 mt-5">
+            <div class="filtrar">
+                <label class="text-uppercase font-weight-bold text-white" for="Ordenar por">Ordenar por</label>
+                <select class="form form-select ">
+                    <option selected>Mas vendidos</option>
+                    <option >Menor precio</option>
+                    <option >Mayor precio</option>
+                    <option >A-Z</option>
+                    <option >Z-A</option>
+                </select>
             </div>
         </div>
         <!--secstion principal (productos)-->
@@ -249,6 +254,9 @@
                 </div>
             </div>
         </section>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-dark btn-lg mt-5 mb-5" type="button">Ver mas</button>
+        </div>
         <!--termina la  section principal (productos)-->
     </main>
     <!--termina mi main-->

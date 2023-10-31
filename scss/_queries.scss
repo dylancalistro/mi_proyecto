@@ -85,6 +85,56 @@
         }
     }
 }
+@media(min-width:992px){
+    .container-pages{
+        @include grid(grid,50px,3fr);
+        padding-top: 50px;
+        .filtrar{
+            @include flex(flex,center,center);
+            padding-bottom:100px;
+            margin-right: 50px;
+            .form{
+                width: 20%;
+                border: 1px solid #ccc;
+                color: rgb(255, 255, 255);
+                background-color: black;
+                option{
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(0, 0, 0);
+                    font-size: 15px;
+                    
+                }
+            }
+            label{
+                margin-right: 10px
+            }
+        }
+    }
+}
+@media(min-width:320px) and (max-width:991px){
+    .container-pages{
+        @include grid(grid,50px 50px,3fr);
+        .form{
+            width: 100%;
+            border: 1px solid #ccc;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            padding: 2px;
+            font-size: 15px;
+            option{
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        label{
+            margin-left: 100px;
+            font-size: 15px;
+        }
+    }
+
+}
 /*fin queries index*/
 
 /* queries pag contacto*/
