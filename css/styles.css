@@ -276,6 +276,7 @@ footer svg {
     margin-bottom: 5px;
   }
 }
+/*queries ORDENAR POR*/
 @media (min-width: 992px) {
   .container-pages {
     display: grid;
@@ -326,7 +327,6 @@ footer svg {
     text-align: center;
   }
   .container-pages label {
-    margin-left: 100px;
     font-size: 15px;
   }
 }
